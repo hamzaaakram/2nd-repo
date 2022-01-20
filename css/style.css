@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6 rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+    position: relative;
+    height: 95vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(../img/header-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .logo,
+.header .nav-items a{
+    color: white;
+}
+ .navbar .logo{
+    margin-top: 0.4em;
+    float: left;
+    padding-left: 3em;
+    font-size: 3.5rem;
+}
+ .navbar .nav-items{
+    float: right;
+}
+ .navbar .nav-item{
+    display: inline-block;
+    margin-top: 2em;
+    padding-right: 4em; 
+    text-transform: uppercase;
+}
+.navbar a:link,
+.navbar a:visited{
+    color:#f4f4f4;
+}
+ .navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+.navbar::after{
+    content:'' ;
+    display: block;
+    clear: both;
+}
+/* ################ header contact ############### */
+.header_contact{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
+}
+.header_contact h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.header_contact p{
+
+    color: white;
+    text-transform: uppercase;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1em; 
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em; 
+    background-color: white;
+    color: red;
+    border-radius: 15px;
+    margin-left: 11em;
+}
+.header a:hover{
+    border-bottom: 1px solid #f4f4f4;
+    background-color: #ddd;
+}
+/* ################ showcase styling################ */
+.showcase{
+    background-color:#ddd;
+    padding: 10em 0;
+}
+.row{
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row1{
+    margin-bottom: 10em;  
+}
+.row .img-box
+{
+    height: 100%;
+}
+.row .text-box {
+    padding: 2em;
+}
+.row1 .img-box,
+.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row1 .text-box,
+.row2 .img-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row .text-box h2{
+    color: #333333;
+    font-weight: 700;
+}
+.row .text-box a{
+    border: 1.5px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    display: inline-block;
+    padding: 0.5em 1em; 
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0.5em; 
+}
+.text-box a:hover{
+    background-color: #fcf3f2;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ###################  feature section ######### */
+.feature-section{
+    padding-top: 10em;
+    padding-bottom: 10em;   
+}
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.342);
+}
+.box{
+    
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    color: white;   
+}
+ .box1{
+    background-color: #263238;
+    padding: 4em;
+}
+.box2{
+  background: linear-gradient(25deg, #d64c78, #ee4758 50%);
+  color: #fff;
+  padding: 4em;  
+}
+.box3{
+    background-color: #263238;
+    padding: 4.55em;
+} 
+.feature-section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* #################  footer style ######### */
+.footer{
+    background-color: #263238;
+    color:#f4f4f4; 
+    text-align: center;
+    padding: 2em;
+}
+.social-media-class i{
+   padding: 0.3em;
+   padding-bottom: 0.3em;
+}
+/* ############ about page header ############ */
+
+.bg-dark{
+    background-color:#263238 ;
+}.about-us{
+    padding: 5em;
+}
+.about-us h2{
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-style: bold;
+}
+.about-us p{
+    font-weight: 500;
+}
+.about-us h2::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+.about-wrapper{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.about-wrapper ul{
+    font-weight: 500;
+    list-style: none;
+}
+.about-wrapper .left{
+    margin-left: 15em;
+    float: left;
+}
+.about-wrapper .right{
+    float: right;
+    margin-right: 15em;
+}
+.about-wrapper::after{
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+ .about-wrapper li::before{
+     content: '\2713';
+     color: #e63946;
+    font-weight: bold;
+    padding-right: 1em;
+ }
+.count-item{
+    margin-top: 3em;
+     float: left;
+     width: 25%;
+     text-align: center;
+ }
+ .count-item p{
+     font-size: 1.8rem;
+     color: #555555;
+     font-weight: 700;
+ }
+ .counts::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+ .counts span{
+     font-size: 3em;
+     font-weight: 700;
+     color: #e63946;
+ }
+ .banner{
+      background: linear-gradient(25deg, #d64c78, #ee4758 50%);;
+      color: #f4f4f4;
+      margin-top: 2em;
+      padding-top: 1em;
+      box-shadow: 5px 5px 10px #00000060;
+ }
+ .banner .banner-left{
+     float: left;
+     width: 60%;  
+ }
+ .banner .banner-right{
+     float: right;
+     width: 40%;
+     text-align: right; 
+ }
+ .banner::after{
+    content: '';
+    display: block;
+    clear: both;
+ }
+ .banner-left .banner-line{
+     font-size: 1.5rem;
+     font-weight: 700;
+     padding-top: 1rem;  
+     padding-bottom: 1rem;
+     padding-right: 1rem;   
+ }
+ .banner .banner-btn{
+     text-align: center;
+     display: inline-block;
+     font-weight: 700;
+     font-size: 2rem;
+     text-transform: uppercase;
+     padding: 0.3em 0.7em;
+     border: 4px solid white;
+     letter-spacing: 0.5em;
+     color: #f4f4f4;
+     margin-bottom: 0.7em;
+     margin-right: 0.7em;
+ }
+ .banner a:hover{
+    background-color: lightgray;
+}
+ /* ############### contact us ################## */
+ .contact-section{
+      padding-top: 10em; 
+     background: #f4f4f4;
+     padding-bottom: 10em;
+ }
+.contact-wrapper .campny-address{
+    float: left;
+    width: 49%;
+   
+    background: #fff;
+    padding: 1rem;
+    height: 670px;
+}
+.contact-wrapper .contact-farm{
+    float: right;
+    width: 49%;
+    background: #fff;
+    font-size: 1.6rem;
+}
+.contact-wrapper i{
+    color: #e63946;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.contact-wrapper h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.contact-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.campny-address .address-group{
+    margin-bottom: 3rem;
+}
+.campny-address img{
+    max-width: 100%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+.contact-farm h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+    width: 90%;
+}
+.contact-farm label{
+    display: block;
+}
+.contact-farm input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-group label::after{
+    content: ':';
+    color: #e63946;
+}
+.form-group textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+.contact-farm{
+    padding: 1rem;
+    height: 670px;
+}
+.farm-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ############### media quires ################## */
+@media (max-width : 500px){
+        html{
+            font-size: 50%;
+        }
+        .navbar .logo,
+        .navbar .nav-items{
+            float: none;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .row{
+            height: auto;
+            width: 100%;
+        }
+        .row .img-box,
+        .row .text-box{
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+        /* ###################################3 */ 
+        /* ###################################3 */ 
+        .count-item{
+            float: none;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+         .about-wrapper .left     
+        {
+            float: none;
+            text-align: center;
+            width: 100%;
+            margin: 0em;
+            margin-bottom: 2em;
+        }
+        .about-wrapper .right
+        {
+            float: none;
+            text-align: center;
+            width: 100%;
+            margin: 0em;
+        }
+        .feature-section .box{
+            float: none;
+            text-align: center;
+            width: 100%;
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.342);
+        }
+        .feature-section .box2,
+        .feature-section .box3{
+            margin-top: 7rem;
+        }
+        .box-wrapper{
+            box-shadow: none;
+        }
+        .banner .banner-left,
+        .banner .banner-right{
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+        .contact-wrapper .campny-address{
+            float: none;
+            text-align: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5rem;
+            
+        }
+        .contact-wrapper .contact-farm{
+            float: none;
+            text-align: center;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+    @media(min-width : 501px) and (max-width : 800px){
+        html{
+            font-size: 50%;
+        }
+        p{
+            font-size: 1.8rem;
+        }
+        .navbar .logo,
+        .navbar .nav-items{
+            float: none;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .about-wrapper .left     
+        {
+            float: none;
+            text-align: center;
+            width: 100%;
+            margin: 0em;
+            margin-bottom: 2em;
+        }
+        .about-wrapper .right
+        {
+            float: none;
+            text-align: center;
+            width: 100%;
+            margin: 0em;
+        .row{
+            height: auto;
+            width: 100%;
+        }
+        .row .img-box,
+        .row .text-box{
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+        .feature-section .box{
+            float: none;
+            text-align: center;
+            width: 100%;
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.342);
+        }
+        .feature-section .box2,
+        .feature-section .box3{
+            margin-top: 7rem;
+        }
+        .box-wrapper{
+            box-shadow: none;
+        }
+        .banner .banner-left,
+        .banner .banner-right{
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+        .contact-wrapper .campny-address{
+            float: none;
+            text-align: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5rem;
+            
+        }
+        .contact-wrapper .contact-farm{
+            float: none;
+            text-align: center;
+            width: 100%;
+            height: auto;
+        }
+    }
+   
+    @media(min-width : 800px) and (max-width : 1200px){
+        html{
+            font-size: 56.7%;
+        }
+        .row .text-box h2{
+            font-size: 2.2em;
+            font-weight: 500;
+        }
+    }
+   
+    @media(orientation : landscape ) and (max-height : 500px){
+        .header{
+            height: 90vmax;
+        }
+    }
